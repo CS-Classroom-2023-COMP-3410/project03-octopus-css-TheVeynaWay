@@ -1,3 +1,5 @@
+<!--linked my external css code-->
+<link rel="stylesheet" href="styles.css">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -62,18 +64,21 @@
             <!-- Image -->
             <img src="octopus-image.png" alt="Image of an octopus" width="100">
 
-            <h2>Octopus Quiz</h2>
-            <form action="/submit-quiz" method="POST">
-                <!-- Question 1 -->
-                <label for="question1">How many hearts does an octopus have?</label>
-                <input type="text" id="question1" name="question1"><br>
+            <!--Added quiz-text class in order to allow flexbox to put the image on right side of all text-->
+            <div class="quiz-text">
+                <h2>Octopus Quiz</h2>
+                <form action="/submit-quiz" method="POST">
+                    <!-- Question 1 -->
+                    <label for="question1">How many hearts does an octopus have?</label>
+                    <input type="text" id="question1" name="question1"><br>
 
-                <!-- Question 2 -->
-                <label for="question2">Can octopuses change color? (Yes/No)</label>
-                <input type="text" id="question2" name="question2"><br>
+                    <!-- Question 2 -->
+                    <label for="question2">Can octopuses change color? (Yes/No)</label>
+                    <input type="text" id="question2" name="question2"><br>
 
-                <input type="submit" value="Submit Quiz">
-            </form>
+                    <input type="submit" value="Submit Quiz">
+                </form>
+            </div>
         </div>
 
     </div> <!-- End of main-content -->
